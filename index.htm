@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body>
+    <center>
+        <button onclick="off()">Off</button>
+        <img id="image1" src="off.png" width="100" height="150"/>
+        <button onclick="on()">On</button>
+    </center>
+    <script>
+            function on()
+            {
+                let img = document.getElementById("image1")
+                img.src = "on.png"
+            }
+            function off()
+            {
+                let img = document.getElementById("image1")
+                img.src = "off.png"
+            }
+    </script>
+</body>
+</html>
